@@ -4,132 +4,315 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HeyyoGelato</title>
+
     <link rel="stylesheet" href="style.css">
 
-    <link rel="icon" href="android-icon-72x72.png" type="image/png" sizes="64x64">
+    <link rel="icon" href="android-icon-72x72.png" type="image/png">
 
-    <!-- Gelato Fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
 
-    <!-- Header Button Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header class="header">
+    <!-- HEADER -->
 
-    <!-- ❗ mainpage route düzeltildi -->
-    <a href="/"><h3 class="logo">HeyyoGelato</h3></a>
+    <header class="header">
 
-    <div class="button-div">
-        <a href="#aroma-anc"><button class="button-1">Gelato Aromaları</button></a>
-        <a href="#tarihce-anc"><button class="button-2">Tarihçe</button></a>
-        <button class="button-3">Heyyo</button>
-        <button class="button-4">Heyyo</button>
+        <a href="/">
+            <h3 class="logo">HeyyoGelato</h3>
+        </a>
+
+        <div class="button-div">
+
+            <a href="#aroma-anc">
+                <button class="button-1">
+                    Gelato Aromaları
+                </button>
+            </a>
+
+            <a href="#tarihce-anc">
+                <button class="button-2">
+                    Tarihçe
+                </button>
+            </a>
+
+            <button class="button-3">Heyyo</button>
+            <button class="button-4">Heyyo</button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- GELATO -->
+
+    <h3 id="aroma-anc" class="cesit">
+        Gelato Aromaları
+    </h3>
+
+    <div class="slider-container">
+
+
+        <!-- VISNE -->
+
+        <a href="/visneGelato">
+
+            <div class="card">
+
+                <img src="visne.png" alt="">
+
+                <h3>Vişne Gelato</h3>
+
+                <p>
+                    Fresh Italian gelato with unique sour cherry flavor.
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <!-- CIKOLATA -->
+
+        <a href="/cikolataGelato">
+
+            <div class="card">
+
+                <img src="cikolata.png" alt="">
+
+                <h3>Çikolata Gelato</h3>
+
+                <p>
+                    Made daily with natural ingredients and also Italian chocolate.
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <!-- CILEK -->
+
+        <a href="/cilekGelato">
+
+            <div class="card">
+
+                <img src="cilek.jpg" alt="">
+
+                <h3>Çilek Gelato</h3>
+
+                <p>
+                    Sweet and creamy strawberry recipes.
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <!-- VANILYA -->
+
+        <a href="/vanilyaGelato">
+
+            <div class="card">
+
+                <img src="vanilya.jpg" alt="">
+
+                <h3>Vanilya Gelato</h3>
+
+                <p>
+                    Classic Italian vanilla taste with modern style.
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <!-- MAVI -->
+
+        <a href="/maviGelato">
+
+            <div class="card">
+
+                <img src="mavi.jpg" alt="">
+
+                <h3>İtalyan Karameli Gelato</h3>
+
+                <p>
+                    Colorful and refreshing Italian caramel flavor.
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <!-- FISTIK -->
+
+        <a href="/fistikGelato">
+
+            <div class="card">
+
+                <img src="fistik.jpg" alt="">
+
+                <h3>Fıstık Gelato</h3>
+
+                <p>
+                    Prepared with premium natural pistachio.
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <!-- KARADUT -->
+
+        <a href="/karadutGelato">
+
+            <div class="card">
+
+                <img src="karadut.jpg" alt="">
+
+                <h3>Karadut Gelato</h3>
+
+                <p>
+                    Soft texture and unforgettable blackberry aroma.
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <!-- KARAMEL -->
+
+        <a href="/karamelGelato">
+
+            <div class="card">
+
+                <img src="karamel.png" alt="">
+
+                <h3>Karamel Gelato</h3>
+
+                <p>
+                    Inspired by traditional Italian caramel.
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <!-- MANGO -->
+
+        <a href="/mangoGelato">
+
+            <div class="card">
+
+                <img src="mango.jpg" alt="">
+
+                <h3>Mango Gelato</h3>
+
+                <p>
+                    Perfect fruit for every season.
+                </p>
+
+            </div>
+
+        </a>
+
     </div>
 
-</header>
 
-<h3 id="aroma-anc" class="cesit">Gelato Aromaları</h3>
 
-<div class="slider-container">
+    <div class="tarihce-div">
 
-    <a href="/visneGelato">
-        <div class="card">
-            <img src="visne.png" alt="">
-            <h3>Vişne Gelato</h3>
-            <p>Fresh Italian gelato with unique sour cherry flavor.</p>
-        </div>
-    </a>
-
-    <a href="/cikolataGelato">
-        <div class="card">
-            <img src="cikolata.png" alt="">
-            <h3>Çikolata Gelato</h3>
-            <p>Made daily with natural ingredients and Italian chocolate.</p>
-        </div>
-    </a>
-
-    <a href="/cilekGelato">
-        <div class="card">
-            <img src="cilek.jpg" alt="">
-            <h3>Çilek Gelato</h3>
-            <p>Sweet and creamy strawberry recipes.</p>
-        </div>
-    </a>
-
-    <a href="/vanilyaGelato">
-        <div class="card">
-            <img src="vanilya.jpg" alt="">
-            <h3>Vanilya Gelato</h3>
-            <p>Classic Italian vanilla taste with modern style.</p>
-        </div>
-    </a>
-
-    <a href="/maviGelato">
-        <div class="card">
-            <img src="mavi.jpg" alt="">
-            <h3>İtalyan Karameli Gelato</h3>
-            <p>Colorful and refreshing Italian caramel flavor.</p>
-        </div>
-    </a>
-
-    <a href="/fistikGelato">
-        <div class="card">
-            <img src="fistik.jpg" alt="">
-            <h3>Fıstık Gelato</h3>
-            <p>Prepared with premium natural pistachio.</p>
-        </div>
-    </a>
-
-    <a href="/karadutGelato">
-        <div class="card">
-            <img src="karadut.jpg" alt="">
-            <h3>Karadut Gelato</h3>
-            <p>Soft texture and unforgettable blackberry aroma.</p>
-        </div>
-    </a>
-
-    <a href="/karamelGelato">
-        <div class="card">
-            <img src="karamel.png" alt="">
-            <h3>Karamel Gelato</h3>
-            <p>Inspired by traditional Italian caramel.</p>
-        </div>
-    </a>
-
-    <!-- ❗ düzeltildi: direkt dosya değil route -->
-    <a href="/mangoGelato">
-        <div class="card">
-            <img src="mango.jpg" alt="">
-            <h3>Mango Gelato</h3>
-            <p>Perfect fruit for every season.</p>
-        </div>
-    </a>
-
-</div>
-
-<div class="tarihce-div">
-
-    <h2 id="tarihce-anc" class="tarihce">HeyyoGelato'nun Tarihi</h2>
+    <h2 id="tarihce-anc" class="tarihce">
+        HeyyoGelato'nun Tarihi
+    </h2>
 
     <div>
+
         <p>
-            1970 yılında, Florence yakınlarında yaşayan genç dondurma ustası Alessandro Bellini...
-            (metin aynı bırakıldı)
+            1970 yılında, Florence yakınlarında yaşayan genç dondurma ustası Alessandro Bellini,
+            geleneksel İtalyan gelatosunu modern tatlarla birleştirme hayali kuruyordu.
+            Küçük bir aile dükkânında başlayan bu yolculuk, kısa sürede çevredeki insanların
+            dikkatini çekti. Alessandro’nun kullandığı doğal süt, taze meyveler ve el yapımı
+            tarifler, HeyyoGelato’nun ilk imzası oldu.
+            <br><br>
+
+            1978 yılında marka ilk kez “HeyyoGelato” adını aldı.
+            Rivayete göre Alessandro, dükkâna giren çocukların neşeli “Heyyo!”
+            seslerinden ilham aldı ve markanın enerjisini bu isimle yansıtmak istedi.
+            Renkli tabelalar, sıcak atmosfer ve samimi çalışanlar kısa sürede markanın
+            sembolü hâline geldi.
+            <br><br>
+
+            1980’lerde HeyyoGelato, klasik vanilya ve çikolatanın dışına çıkarak
+            fıstık kreması, karamelize incir, limonlu cheesecake ve özel meyve aromaları
+            gibi yenilikçi tatlar üretmeye başladı.
+            Bu farklı yaklaşım, markayı kısa sürede İtalya’daki gençlerin favori
+            gelato markalarından biri hâline getirdi.
+            <br><br>
+
+            1994 yılında HeyyoGelato ilk uluslararası mağazasını Paris’te açtı.
+            Avrupa’da büyüyen marka, tasarımıyla da dikkat çekti;
+            pastel renkler, vintage İtalyan tabelaları ve sıcak atmosfer
+            HeyyoGelato mağazalarının simgesi oldu.
+            İnsanlar sadece dondurma yemek için değil,
+            arkadaşlarıyla vakit geçirmek için de mağazalara gelmeye başladı.
+            <br><br>
+
+            2001 yılında marka dijital dünyaya adım attı ve ilk internet sitesini açtı.
+            Böylece insanlar farklı aromaları inceleyebiliyor,
+            yeni sezon tatlarını takip edebiliyordu.
+            Aynı dönemde sınırlı üretim koleksiyonları da ortaya çıktı.
+            Özellikle yaz aylarında çıkan özel aromalar büyük ilgi gördü.
+            <br><br>
+
+            2008’de şirket sürdürülebilir üretime geçti.
+            Doğal içerikler, geri dönüştürülebilir ambalajlar ve günlük taze üretim sistemi
+            markanın temel prensipleri hâline geldi.
+            HeyyoGelato aynı zamanda yerel çiftliklerle anlaşarak doğal süt ve meyve
+            kullanımını artırdı.
+            <br><br>
+
+            2015 sonrasında sosyal medya sayesinde marka dünya çapında daha da popüler oldu.
+            Özellikle genç kullanıcılar renkli gelato tasarımlarını paylaşmaya başladı.
+            HeyyoGelato mağazaları modern dekorasyonu,
+            müzikleri ve enerjik ortamıyla bir “yaşam tarzı” markasına dönüştü.
+            <br><br>
+
+            Bugün HeyyoGelato, dünyanın farklı şehirlerinde butik mağazalara sahip
+            modern bir gelato markası olarak biliniyor.
+            Marka; geleneksel İtalyan lezzetini genç, eğlenceli ve modern bir atmosferle
+            birleştirerek “Mutluluk bir külah kadar yakındır.”
+            sloganıyla yoluna devam ediyor.
         </p>
+
     </div>
 
 </div>
 
-<footer class="footer">
-    <p>HeyyoGelato Tüm Hakları Saklıdır &copy;</p>
-</footer>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <p>
+            HeyyoGelato Tüm Hakları Saklıdır &copy;
+        </p>
+
+    </footer>
 
 </body>
 </html>
