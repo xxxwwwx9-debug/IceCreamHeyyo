@@ -1,0 +1,249 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding-top: 100px;
+    background-color: #e3d9d9;
+}
+
+/* HEADER */
+
+.header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 90px;
+
+    background: rgba(50, 27, 33, 0.88);
+
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    /* Düzenleme: Kapsayıcıyı esnek yaptık, böylece içindeki elemanları dikeyde kolayca ortalayabiliyoruz */
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+.header h3{
+    /* Düzenleme: fixed yerine absolute yapıldı ve dikeyde tam ortalandı */
+    position: absolute;
+    left: 10px;
+    margin: 0;
+
+    font-size: 64px;
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+    line-height: 90px; /* Header yüksekliği ile eşitleyerek dikeyde ortaladık */
+}
+
+.header a{
+    text-decoration: none;
+}
+
+.button-div{
+    /* Düzenleme: Buton grubunu ekranın tam ortasına getiren sihirli dokunuş */
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 45px;
+}
+
+.header button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: whitesmoke;
+    text-shadow: 2px 2px 5px black;
+
+    background: transparent;
+
+    font-size: 28px;
+
+    width: 120px;
+    height: 40px;
+
+    /* Düzenleme: Hizalamayı yukarı/aşağı kaydıran hatalı margin sıfırlandı */
+    margin: 0; 
+
+    border-radius: 5px;
+    border: none;
+
+    cursor: pointer;
+
+    transition: 0.6s ease;
+}
+
+.header button:hover{
+    transform: scale(1.1) translateY(-3px);
+}
+
+.button-1{
+    background-color: violet;
+}
+
+.button-2{
+    background-color: #321b21;
+}
+
+.button-3{
+    background-color: #4e6782;
+}
+
+.button-4{
+    background-color: #863722;
+}
+
+/* SLIDER */
+
+.cesit{
+    font-family: "Italianno", cursive;
+    font-size: 55px;
+    text-align: center;
+}
+
+.slider-container{
+    width: 90%;
+    margin: 80px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 40px;
+}
+
+.slider-container a{
+    text-decoration: none;
+    color: black;
+}
+
+.card{
+    background: white;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.25);
+
+    transition: 0.5s ease;
+}
+
+.card:hover{
+    transform: translateY(-10px) scale(1.03);
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+
+    background: #d9d9d9;
+}
+
+.card h3{
+    text-align: center;
+
+    font-size: 28px;
+
+    margin: 15px 0 10px 0;
+}
+
+.card p{
+    text-align: center;
+
+    padding: 0 20px 25px 20px;
+
+    font-size: 17px;
+
+    color: #555;
+}
+
+/* TARİHÇE */
+
+.tarihce-div{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    width: 70%;
+
+    margin: 40px auto;
+
+    text-align: center;
+
+    background: rgba(255,255,255,0.08);
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    box-shadow: 0px 8px 30px rgba(0,0,0,0.25);
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    transition: 0.5s ease;
+}
+
+.tarihce-div:hover{
+    transform: scale(1.05) translateY(-10px);
+}
+
+.tarihce{
+    margin-bottom: 10px;
+
+    font-size: 45px;
+}
+
+.tarihce-div p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    font-weight: 1000;
+
+    margin-top: 0;
+
+    font-size: 26px;
+
+    line-height: 1.8;
+}
+
+/* FOOTER */
+
+.footer{
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    width: 100%;
+    height: 160px;
+
+    margin-top: 80px;
+
+    background-color: #321b21;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p{
+    color: white;
+    font-size: 30px;
+
+    margin: 0;
+}
